@@ -22,7 +22,7 @@ console.log(arr);
 // halve the value of each
 // number in the array.
 arr.forEach(function(i){
-  return arr.push(i / 2);
+  arr.push(i / 2);
 })
 
 console.log(arr);
