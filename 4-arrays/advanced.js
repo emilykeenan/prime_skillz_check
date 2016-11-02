@@ -21,8 +21,11 @@ console.log(arr);
 // 4 - Use the forEach method to
 // halve the value of each
 // number in the array.
-arr.forEach(function(i){
-  arr.push(i / 2);
+arr.forEach(function(x, i){
+  arr[i] = x / 2;
 })
 
 console.log(arr);
+//This will add the halved values to the current array.
+// How could you replace the original values with halved values?
+//Try giving the forEach function another parameter.

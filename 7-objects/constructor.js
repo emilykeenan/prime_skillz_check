@@ -8,13 +8,20 @@
 // - perimeter() returns the perimeter of this triangle
 
 function RightTriangle(side1, side2, base) {
+  this.side1 = side1;
+  this.side2 = side2;
+  this.base = base;
   this.area = function(){
-    return side1 * base / 2;
+    return this.side1 * this.base / 2;
   }
   this.perimeter = function(){
-    return side1 + side2 + base;
+    return this.side1 + this.side2 + this.base;
   };
 }
+
+//Good. Use the sides to be properties in the object
+// and then have the methods use those properties in
+// the calculations.
 
 // 2 - Create two instances of the RightTriangle
 // object. Console log the results of calling

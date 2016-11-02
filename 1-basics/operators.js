@@ -8,4 +8,7 @@ var peeps = sigma;
 peeps -= 1;
 
 // 4 - Write a console log that checks if sigma is equal to peeps
-console.log(sigma == peeps);
+console.log(sigma === peeps);
+
+//Good! Best practice is to use ===, unless there is specific reason not to.
+//That way you'll know if one of the numbers is accidentally a string.

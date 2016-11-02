@@ -1,0 +1,97 @@
+diff --git a/1-basics/operators.js b/1-basics/operators.js
+index 473d328..f7be6c5 100644
+--- a/1-basics/operators.js
++++ b/1-basics/operators.js
+@@ -9,3 +9,6 @@ peeps -= 1;
+ 
+ // 4 - Write a console log that checks if sigma is equal to peeps
+ console.log(sigma == peeps);
++
++//Good! Best practice is to use ===, unless there is specific reason not to.
++//That way you'll know if one of the numbers is accidentally a string.
+diff --git a/2-terminal/commands.txt b/2-terminal/commands.txt
+index fca6d3a..57377e4 100644
+--- a/2-terminal/commands.txt
++++ b/2-terminal/commands.txt
+@@ -1,26 +1,26 @@
+ # This module gauges your comfort with often-used terminal commands.
+ # Type your responses on a new line.
+ 
+-# 1 - What is the command for changing directories? 
++# 1 - What is the command for changing directories?
+ cd
+ 
+-# 2 - What is a quick way to get to your user's (home) directory? 
++# 2 - What is a quick way to get to your user's (home) directory?
+ just type cd, with no directory name after it
+ 
+-# 3 - What is a quick way to get to the root directory? 
++# 3 - What is a quick way to get to the root directory?
+ cd /
+ 
+-# 4 - How do you quickly create an empty file? 
++# 4 - How do you quickly create an empty file?
+ touch
+ 
+-# 5 - What is the command for creating a new directory? 
++# 5 - What is the command for creating a new directory?
+ mkdir
+ 
+-# 6 - What is the command for listing the files in the current directory? 
++# 6 - What is the command for listing the files in the current directory?
+ ls
+ 
+-# 7 - What is the command for listing all files, including hidden files in the current directory? 
++# 7 - What is the command for listing all files, including hidden files in the current directory?
+ ls -a
+ 
+-# 8 - What is the command for navigating to the parent directory of the current directory? 
++# 8 - What is the command for navigating to the parent directory of the current directory?
+ cd ..
+diff --git a/4-arrays/advanced.js b/4-arrays/advanced.js
+index af60b45..45ecfce 100644
+--- a/4-arrays/advanced.js
++++ b/4-arrays/advanced.js
+@@ -26,3 +26,6 @@ arr.forEach(function(i){
+ })
+ 
+ console.log(arr);
++//This will add the halved values to the current array.
++// How could you replace the original values with halved values?
++//Try giving the forEach function another parameter.
+diff --git a/7-objects/constructor.js b/7-objects/constructor.js
+index 92a6759..8f6a8b4 100644
+--- a/7-objects/constructor.js
++++ b/7-objects/constructor.js
+@@ -16,6 +16,10 @@ function RightTriangle(side1, side2, base) {
+   };
+ }
+ 
++//Good. Use the sides to be properties in the object
++// and then have the methods use those properties in 
++// the calculations.
++
+ // 2 - Create two instances of the RightTriangle
+ // object. Console log the results of calling
+ // both functions on both instances.
+diff --git a/7-objects/literal.js b/7-objects/literal.js
+index a564c63..223c9c1 100644
+--- a/7-objects/literal.js
++++ b/7-objects/literal.js
+@@ -33,3 +33,5 @@ console.log(prime);
+ prime.print = prime.address + ', ' + prime.city + ', ' + prime.state + ', ' + prime.zip;
+ 
+ console.log(prime.print);
++// Here prime.print is a property. 
++// Make it a method so it will be a function that can be called.
+diff --git a/8-git/git-it.txt b/8-git/git-it.txt
+index 6e00f1f..3eb8d43 100644
+--- a/8-git/git-it.txt
++++ b/8-git/git-it.txt
+@@ -18,3 +18,6 @@ git push -u origin master
+ 
+ # Type the command to remove a file from the staging area
+ git rm
++This will remove the file completely.
++To remove a file from the staging area that was accidentally added with git add:
++git reset filename.js

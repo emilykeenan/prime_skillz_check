@@ -30,6 +30,9 @@ console.log(prime);
 // address of prime. Call the new
 // property/method print.
 
-prime.print = prime.address + ', ' + prime.city + ', ' + prime.state + ', ' + prime.zip;
+prime.print = function() {
+  return prime.address + ', ' + prime.city + ', ' + prime.state + ', ' + prime.zip};
 
-console.log(prime.print);
+console.log(prime.print());
+// Here prime.print is a property.
+// Make it a method so it will be a function that can be called.
